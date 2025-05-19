@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Government Loan"> <!-- Test Suite --> 
+	<test name="Company Loan">
+		<packages>
+			<package name="testng_Package"> <!-- Running all test case (classes) inside the test package -->
+			</package>
+		</packages>
+	</test>
+</suite>
+  
+ 
+  
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Government Loan"  parallel="tests" thread-count="6"> <!-- Test Suite --> <!-- Declaring parallel tests will make each test to run parallel to each other (can also parallel test per class) --> 
+<listeners> 
+	<listener class-name="testng_Package.testNGListeners"/> <!-- Implements the created test listeners here in XML file -->
+</listeners>
+<parameter name="URL1" value="http://www.qaclickacademy1.com"/> <!-- Parameterizing that is valid in this test suite -->
+  <test thread-count="5" name="Pag-IBIG Loan"> <!-- Test Name and count as 1 Test Folder -->
+    <classes>
+      <class name="testng_Package.testNGSample1"> <!-- Test Cases (from each Test Classes) -->
+      	<methods>
+      		<include name="Demo2"> <!-- Including specific method to run within the class (will only run included method) -->
+      		</include>
+      	</methods>
+      </class>
+      
+      <class name="testng_Package.testNGSample2"> <!-- Test Cases (from each Test Classes) -->
+      </class>
+    </classes>
+  </test>
+  
+  <test name="Car Loan"> <!-- Test Name -->
+  <parameter name="URL2" value="http://www.qaclickacademy2.com"/> <!-- Parameterizing that is valid within this test only -->
+  <parameter name="APIkey" value="123456"/> <!-- Parameterizing that is valid within this test only -->
+  	<classes>
+  		<class name = "testng_Package.testNGSample3"> <!-- Test Name and count as 1 Test Folder -->
+  			<methods>
+  				<exclude name="MobileLoginCarLoan"> <!-- Excluding specific method to run within the class -->
+  				</exclude>
+  			</methods>
+  		</class>
+  	</classes>
+  </test>
+  
+  <test name="Housing Loan"> <!-- Test Name -->
+  	<classes>
+  		<class name = "testng_Package.testNGSample4"> <!-- Test Name and count as 1 Test Folder -->
+  		</class>
+  	</classes>
+ </test>
+  
+  <test name="Calamity Loan"> <!-- Test Name -->
+  	<classes>
+  		<class name = "testng_Package.testNGSample5"> <!-- Test Name and count as 1 Test Folder -->
+  			<methods>
+  				<exclude name="Mobile.*"> <!-- Excluding all methods to run within the class that starts with "Mobile" -->
+  				</exclude>
+  			</methods>
+  		</class>
+  	</classes>
+  </test>
+  
+</suite>
+  
+ 
+  
+

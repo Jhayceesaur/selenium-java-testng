@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Government Loan"> <!-- Test Suite --> 
+
+	<test name="Loan Functionality - Smoke Testing (Include)">
+		<groups> <!-- TestNG executing test cases in a group which methods came from each class -->
+			<run>
+				<include name="Smoke"></include> <!-- Includes all the test cases that is part of the group named "Smoke"-->
+			</run>
+		</groups>
+			<classes>
+				<class name="testng_Package.testNGSample1"></class>
+				<class name="testng_Package.testNGSample2"></class>
+				<class name="testng_Package.testNGSample3"></class>
+				<class name="testng_Package.testNGSample4"></class>
+				<class name="testng_Package.testNGSample5"></class>
+			</classes>
+	</test>
+	
+	<test name="Loan Functionality - Smoke Testing (Exclude)">
+		<groups> <!-- TestNG executing test cases in a group which methods came from each class -->
+			<run>
+				<exclude name="Skip"></exclude> <!-- Excludes all the test cases that is part of the group named "Skip" -->
+			</run>
+		</groups>
+			<classes>
+				<class name="testng_Package.testNGSample1"></class>
+				<class name="testng_Package.testNGSample2"></class>
+				<class name="testng_Package.testNGSample3"></class>
+				<class name="testng_Package.testNGSample4"></class>
+				<class name="testng_Package.testNGSample5"></class>
+			</classes>
+	</test>
+	
+</suite>
+  
+ 
+  
+

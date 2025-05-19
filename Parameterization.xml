@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameterization Test"> <!-- Test Suite --> 
+	<test name="Multiple Test Data">
+		<classes>
+		<class name="testng_Package.testNGSample6"/>
+		</classes>
+	</test>
+</suite>
+ 
+<!-- 2 ways to achieve parameterization is driving it in the xml file and other one is driving it inside the class by using @DataProvider annotation -->
+ 
+  
+
